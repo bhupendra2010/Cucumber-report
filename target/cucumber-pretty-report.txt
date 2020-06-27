@@ -1,0 +1,71 @@
+Feature: 
+  User want to select product by brand and put in basket
+
+  Scenario Outline:                                 [90m# Next.feature:4[0m
+    [36mGiven [0m[36mUser is on homepage[0m
+    [36mWhen [0m[36mUser go to Girls option and select age[0m
+    [36mAnd [0m[36mUser search product with "<Brand>"[0m
+    [36mThen [0m[36mUser should found all the required product[0m
+    [36mThen [0m[36mUser should select the required product[0m
+
+    Examples: 
+
+  Scenario Outline:                                 [90m# Next.feature:13[0m
+    [32mGiven [0m[32mUser is on homepage[0m                       [90m# StepDef.user_is_on_homepage()[0m
+    [32mWhen [0m[32mUser go to Girls option and select age[0m     [90m# StepDef.user_go_to_Girls_option_and_select_age()[0m
+    [31mAnd [0m[31mUser search product with "[0m[31m[1mLabel Mix[0m[31m"[0m        [90m# StepDef.user_search_product_with(String)[0m
+      [31morg.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="Info">...</div> is not clickable at point (1112, 539). Other element would receive the click: <div class="FooterBG">...</div>
+        (Session info: chrome=83.0.4103.116)
+      Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+      System info: host: 'LAPTOP-98TS530D', ip: '192.168.0.29', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\bhupe\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49864}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+      Session ID: dd705446ae0000cada8d380b86fcb52c
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+      	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+      	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+      	at org.Next.co.uk.pagespackage.Resultpage.brand(Resultpage.java:33)
+      	at org.Next.co.uk.stepdefination.StepDef.user_search_product_with(StepDef.java:28)
+      	at ✽.And User search product with "Label Mix"(Next.feature:7)
+      [0m
+    [36mThen [0m[36mUser should found all the required product[0m [90m# StepDef.user_should_found_all_the_required_product()[0m
+    [36mThen [0m[36mUser should select the required product[0m    [90m# StepDef.user_should_select_the_required_product()[0m
+
+  Scenario Outline:                                 [90m# Next.feature:14[0m
+    [32mGiven [0m[32mUser is on homepage[0m                       [90m# StepDef.user_is_on_homepage()[0m
+    [32mWhen [0m[32mUser go to Girls option and select age[0m     [90m# StepDef.user_go_to_Girls_option_and_select_age()[0m
+    [31mAnd [0m[31mUser search product with "[0m[31m[1mLoake[0m[31m"[0m            [90m# StepDef.user_search_product_with(String)[0m
+      [31morg.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="Info">...</div> is not clickable at point (371, 539). Other element would receive the click: <li class="FooterSection">...</li>
+        (Session info: chrome=83.0.4103.116)
+      Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+      System info: host: 'LAPTOP-98TS530D', ip: '192.168.0.29', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\bhupe\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49960}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+      Session ID: 5175213efc71db9347486e98d6a4b331
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+      	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+      	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+      	at org.Next.co.uk.pagespackage.Resultpage.brand(Resultpage.java:33)
+      	at org.Next.co.uk.stepdefination.StepDef.user_search_product_with(StepDef.java:28)
+      	at ✽.And User search product with "Loake"(Next.feature:7)
+      [0m
+    [36mThen [0m[36mUser should found all the required product[0m [90m# StepDef.user_should_found_all_the_required_product()[0m
+    [36mThen [0m[36mUser should select the required product[0m    [90m# StepDef.user_should_select_the_required_product()[0m
